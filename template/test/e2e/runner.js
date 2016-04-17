@@ -11,7 +11,7 @@ var isWin = os.platform() == 'win32'
 // http://nightwatchjs.org/guide#settings-file
 var spawn = require('cross-spawn')
 var runner = spawn(
-  isWin ? '.\\node_modules\\.bin\\nightwatch' : './node_modules/.bin/nightwatch',,
+  isWin ? '.\\node_modules\\.bin\\nightwatch' : './node_modules/.bin/nightwatch',
   [
     '--config', 'test/e2e/nightwatch.conf.js',
     '--env', 'chrome,firefox'
